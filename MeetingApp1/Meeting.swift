@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Meeting: Identifiable {
+    var id: UUID = UUID();
+    var title: String;
+    var date: Date;
+    var location: String;
+}
