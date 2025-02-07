@@ -38,13 +38,6 @@ struct MeetingListView: View {
                     }
                 }
                 .id(UUID())
-//                .onDelete {
-//                    indexSet in indexSet.forEach {
-//                        index in
-//                        let meeting = viewModel.meetings[index]
-//                        viewModel.deleteMeeting(meeting: meeting)
-//                    }
-//                }
             }
             .navigationTitle("Meetings")
             .toolbar {
@@ -64,11 +57,6 @@ struct MeetingListView: View {
                 EditMeetingView(viewModel: viewModel, meeting: meeting)
             }
         }
-//        .sheet(isPresented: $isEditing) {
-//            if let meeting = selectedMeeting {
-//                EditMeetingView(viewModel: viewModel, meeting: meeting)
-//            }
-//        }
     }
 }
 
